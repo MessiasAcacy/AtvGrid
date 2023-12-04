@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            font-size: 3vw;
+            color: white;
+            margin: 1.5%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 30vh 59vh;
+            justify-content: center;
+            gap: 1vw;
+        }
+
+        .a{
+            padding: 2vw;
+            background-color: rgb(0, 0, 0);
+            grid-row-start:1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .b{
+            padding: 2vw;
+            background-color: rgb(0, 0, 0);
+            grid-row-start:1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .c{
+            padding: 2vw;
+            background-color: rgb(0, 0, 0);
+            grid-row-start:2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        div{
+            border-radius: 1vw;
+            font-size: 3vw;
+            
+          
+        }
+
+        .d{
+            background-color: rgb(0, 0, 0);
+            grid-row-start:2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+           
+            
+        }
+        
+        .container-flex{
+            line-height: 10VW;
+            display: flex;
+            align-items: center;
+            padding: 3vw;
+            flex-direction: column;
+            color: black;
+        }
+
+        #a0{
+            display: flex;
+        }
+        #um{
+           
+            background-color: rgb(197, 197, 197);
+            width: 42vw;
+            height: 22.9vh;
+      
+        }
+
+        #dois{
+  
+            margin-right: 0.5vw;
+            margin-top: 1vw;
+            background-color: rgb(197, 197, 197);
+            width: 20.5vw;
+            height: 22.9vh;
+        }
+
+        #tres{
+            margin-left: 0.5vw;
+            margin-top: 1vw;
+           background-color: rgb(197, 197, 197);
+           width: 20.5vw;
+            height: 22.9vh;
+       }
+
+        
+    </style>
+<body class="container">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">
+        <div class="container-flex">
+            <div id="um">&nbsp;&nbsp;E</div>
+            <div id="a0">
+                <div id="dois">&nbsp;&nbsp;F</div>
+                <div id="tres">&nbsp;&nbsp;G</div>
+            </div>
+            
+
+        </div>
+ 
+    </div>
+    
+</body>
+</html>
